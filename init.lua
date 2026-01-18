@@ -90,6 +90,9 @@ P.S. You can delete this when you're done too. It's your config now! :)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+-- Codesync
+vim.opt.runtimepath:prepend(vim.fn.expand '~/dev/codeSync/nvim-plugin')
+vim.cmd 'runtime! plugin/codesync.lua'
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = false
 
